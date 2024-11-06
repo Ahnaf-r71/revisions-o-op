@@ -48,8 +48,13 @@
             $this->age=$age;
             $this->designation=$designation;
         }
+
+        public static function setDrinkingAge($dage){
+            self::$drinking_age=$dage;
+        }
     }
 
+    
 //Without using constructor , needing to do this->name
     //     public function  setName($name,$age,$designation) {
     //         $this->name=$name; //varaible is already a property just refer to the name

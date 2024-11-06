@@ -18,6 +18,10 @@
   <input type="submit" name="submit" value="Submit">
 </form>
     
+<form action="index.php" method="POST">
+  <input type="text" id="drinking" name="drinking" value=""><br><br>
+  <input type="submit" name="submit" value="Submit">
+</form>
     
     <?php 
     
@@ -34,8 +38,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['submit'])) {
         $name=htmlspecialchars($_POST['fname']);
         $age=htmlspecialchars($_POST['age']);
         $designation=htmlspecialchars($_POST['designation']);
+        $drink=htmlspecialchars($_POST['drinking']);
 
         $createNewPerson = new newPerson($name,$age,$designation);
+        newPerson::setDrinkingAge($drink);
         //unset($createNewPerson); //for running deconstruct 
         echo "<br>Drinking Age is ".newPerson::$drinking_age." years old <br>"; // static is accessable anywhere and so is its method
         // $createNewPerson->setName($name,$age,$designation) ; //->wihtout constructor
