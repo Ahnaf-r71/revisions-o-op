@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<?php include('includes/newclass.inc.php') ?>
+<?php //include('includes/newclass.inc.php');
+include('includes/autoloader.inc.php');
+ ?>
+
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
