@@ -1,4 +1,4 @@
-<?php declare (strict_types=1);?> <!-- MUST BE IN THE FIRST LINE TO WORK -->
+<?php // declare (strict_types=1);?> <!-- MUST BE IN THE FIRST LINE TO WORK -->
 <!-- Check if proper variables are inserted wiht proper data types  -->
 <!DOCTYPE html>
 <?php //include('includes/newclass.inc.php');
