@@ -1,5 +1,9 @@
+<?php declare (strict_types=1);?> <!-- MUST BE IN THE FIRST LINE TO WORK -->
+<!-- Check if proper variables are inserted wiht proper data types  -->
 <!DOCTYPE html>
 <?php //include('includes/newclass.inc.php');
+
+
 include('includes/autoloader.inc.php');
  ?>
 
@@ -20,10 +24,10 @@ include('includes/autoloader.inc.php');
   <input type="text" id="age" name="age" value=""><br><br>
   <label for="designation">Designation:</label><br>
   <input type="text" id="designation" name="designation" value=""><br><br>
-  <input type="submit" name="submit" value="Submit">
-</form>
+
+
     
-<form action="index.php" method="POST">
+
   <input type="text" id="drinking" name="drinking" value=""><br><br>
   <input type="submit" name="submit" value="Submit">
 </form>
