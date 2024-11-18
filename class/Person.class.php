@@ -41,7 +41,7 @@
         public $age;
         public $designation;
 
-        public static $drinking_age=22;
+         public static $drinking_age=22;
 
         public function __construct($name,$age,$designation){
             $this->name=$name;
